@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Needs Essential Home</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #0077cc;
+      color: white;
+    }
+
+    header, footer {
+      background-color: #005fa3;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .delivery-banner {
+      background-color: #3399ff;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background-color: #006bb3;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1603574670812-d24560880210?auto=format&fit=crop&w=1200&q=60');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .start-button {
+      margin-top: 20px;
+      background-color: #ffffff;
+      color: #005fa3;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+      color: white;
+    }
+
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .category {
+      background-color: white;
+      color: black;
+      width: 250px;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .category img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .category h3 {
+      margin: 15px 0 10px;
+      color: #0077cc;
+    }
+
+    table {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: white;
+      color: black;
+      border-collapse: collapse;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    table th, table td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    @media (max-width: 768px) {
+      .categories {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Daily Needs Essential Home</h1>
+    <p>Your One-Stop Shop for Everyday Essentials</p>
+  </header>
+
+  <div class="delivery-banner">
+    🚚 Fast Delivery in Just 15–20 Minutes in Your Area!
+  </div>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#categories">Categories</a>
+    <a href="#deliveryboys">Delivery Boys</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    Shop Smart. Live Better.
+    <a href="#categories" class="start-button">Start Shopping</a>
+  </div>
+
+  <div class="container" id="categories">
+    <div class="section-title">Shop by Category</div>
+    <div class="categories">
+
+      <div class="category">
+        <img src="https://images.unsplash.com/photo-1606813902474-e0d602d43d9a?auto=format&fit=crop&w=800&q=60" alt="Groceries">
+        <h3>Groceries</h3>
+        <p>Fresh fruits, vegetables, rice, pulses, dairy & more.</p>
+      </div>
+
+      <div class="category">
+        <img src="https://images.unsplash.com/photo-1581579185169-020fbdad9b18?auto=format&fit=crop&w=800&q=60" alt="Cleaning">
+        <h3>Cleaning Supplies</h3>
+        <p>Soaps, disinfectants, mops, brooms, and tools.</p>
+      </div>
+
+      <div class="category">
+        <img src="https://images.unsplash.com/photo-1588776814546-ec7a3f7a34e7?auto=format&fit=crop&w=800&q=60" alt="Personal Care">
+        <h3>Personal Care</h3>
+        <p>Shampoo, soap, toothpaste, grooming items.</p>
+      </div>
+
+      <div class="category">
+        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=60" alt="Beverages">
+        <h3>Beverages</h3>
+        <p>Water, juices, tea, coffee, and soft drinks.</p>
+      </div>
+
+      <div class="category">
+        <img src="https://images.unsplash.com/photo-1594629484904-0645b411c8e3?auto=format&fit=crop&w=800&q=60" alt="Baby Products">
+        <h3>Baby Products</h3>
+        <p>Diapers, wipes, formula, and baby essentials.</p>
+      </div>
+
+      <div class="category">
+        <img src="https://images.unsplash.com/photo-1607083206173-24a643af11d0?auto=format&fit=crop&w=800&q=60" alt="Stationery">
+        <h3>Stationery</h3>
+        <p>Pens, notebooks, office and school supplies.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Delivery Boy Contacts -->
+  <div class="container" id="deliveryboys">
+    <div class="section-title">Delivery Boy Contact Details</div>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Phone Number</th>
+        <th>Area</th>
+      </tr>
+      <tr>
+        <td>Ravi Kumar</td>
+        <td>+91 9876543210</td>
+        <td>North Zone</td>
+      </tr>
+      <tr>
+        <td>Salim Ansari</td>
+        <td>+91 9123456780</td>
+        <td>South Zone</td>
+      </tr>
+      <tr>
+        <td>John D'Souza</td>
+        <td>+91 9988776655</td>
+        <td>East Zone</td>
+      </tr>
+      <tr>
+        <td>Rahul Singh</td>
+        <td>+91 9012345678</td>
+        <td>West Zone</td>
+      </tr>
+    </table>
+  </div>
+
+  <footer id="contact">
+    <p>&copy; 2025 Daily Needs Essential Home. All rights reserved.</p>
+    <p>Email: support@dailyneeds.com | Phone: +1 234-567-890</p>
+  </footer>
+
+</body>
+</html>
